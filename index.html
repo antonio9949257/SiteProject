@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #0D1117;
-            color: #E6EDF3;
+            background-color: #FFFFFF;
+            color: #1F2937;
             font-family: 'Inter', sans-serif;
         }
         .hero-slider {
@@ -41,7 +41,7 @@
             position: absolute;
             width: 4px;
             height: 100%;
-            background: white;
+            background: #1F2937;
             left: 50%;
             top: 0;
             cursor: ew-resize;
@@ -52,16 +52,16 @@
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            background: white;
+            background: #1F2937;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
         }
-        .bg-custom-dark { background-color: #161B22; }
-        .bg-custom-darker { background-color: #010409; }
-        .text-main { color: #E6EDF3; }
-        .text-secondary { color: #8B949E; }
-        .border-custom { border-color: #21262D; }
+        .bg-custom-dark { background-color: #F3F4F6; }
+        .bg-custom-darker { background-color: #E5E7EB; }
+        .text-main { color: #1F2937; }
+        .text-secondary { color: #6B7280; }
+        .border-custom { border-color: #D1D5DB; }
         .btn-primary {
             background-color: #1F6FEB;
             color: white;
@@ -71,9 +71,9 @@
             background-color: #388BFD;
         }
         .badge {
-            color: #E6EDF3;
-            background-color: rgba(110, 118, 129, 0.2);
-            border: 1px solid #30363D;
+            color: #1F2937;
+            background-color: rgba(0, 0, 0, 0.1);
+            border: 1px solid #D1D5DB;
         }
     </style>
 </head>
@@ -83,7 +83,7 @@
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-2">
                 <i class="fas fa-shield-alt text-2xl text-main"></i>
-                <span class="text-xl font-bold text-main">SeguridadPlus</span>
+                <span class="text-xl font-bold text-main">BLUETEL</span>
             </div>
             <div class="hidden md:flex space-x-6">
                 <a href="#home" class="text-secondary hover:text-main transition">Inicio</a>
@@ -101,12 +101,12 @@
         </div>
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-custom-dark px-4 py-2">
-            <a href="#home" class="block py-2 text-secondary hover:bg-gray-700 px-2 rounded">Inicio</a>
-            <a href="#seguridad" class="block py-2 text-secondary hover:bg-gray-700 px-2 rounded">Seguridad</a>
-            <a href="#entretenimiento" class="block py-2 text-secondary hover:bg-gray-700 px-2 rounded">Entretenimiento</a>
-            <a href="#nosotros" class="block py-2 text-secondary hover:bg-gray-700 px-2 rounded">Nosotros</a>
-            <a href="#testimonios" class="block py-2 text-secondary hover:bg-gray-700 px-2 rounded">Testimonios</a>
-            <a href="#contacto" class="block py-2 text-secondary hover:bg-gray-700 px-2 rounded">Contacto</a>
+            <a href="#home" class="block py-2 text-secondary hover:bg-gray-100 px-2 rounded">Inicio</a>
+            <a href="#seguridad" class="block py-2 text-secondary hover:bg-gray-100 px-2 rounded">Seguridad</a>
+            <a href="#entretenimiento" class="block py-2 text-secondary hover:bg-gray-100 px-2 rounded">Entretenimiento</a>
+            <a href="#nosotros" class="block py-2 text-secondary hover:bg-gray-100 px-2 rounded">Nosotros</a>
+            <a href="#testimonios" class="block py-2 text-secondary hover:bg-gray-100 px-2 rounded">Testimonios</a>
+            <a href="#contacto" class="block py-2 text-secondary hover:bg-gray-100 px-2 rounded">Contacto</a>
         </div>
     </nav>
 
@@ -116,7 +116,7 @@
         <div id="slider" class="relative h-screen">
             <!-- Slide 1 -->
             <div class="hero-slider absolute inset-0 bg-cover bg-center flex items-center transition-opacity duration-1000 opacity-100 slide">
-                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                <div class="absolute inset-0 bg-white bg-opacity-20"></div>
                 <div class="container mx-auto px-4 relative z-10 text-white">
                     <h1 class="text-4xl md:text-6xl font-bold mb-4 text-main">Protegemos lo que más importa.</h1>
                     <p class="text-xl md:text-2xl mb-8 text-secondary">Conectamos tu hogar con el mejor entretenimiento.</p>
@@ -124,7 +124,7 @@
                         <a href="https://wa.me/1234567890" class="btn-primary px-6 py-3 rounded-lg font-semibold flex items-center">
                             <i class="fab fa-whatsapp mr-2"></i> Solicitar cotización
                         </a>
-                        <a href="#seguridad" class="bg-custom-dark hover:bg-gray-800 text-main px-6 py-3 rounded-lg font-semibold transition">
+                        <a href="#seguridad" class="bg-custom-dark hover:bg-gray-200 text-main px-6 py-3 rounded-lg font-semibold transition">
                             Ver productos y servicios
                         </a>
                     </div>
@@ -132,7 +132,7 @@
             </div>
             <!-- Slide 2 -->
             <div class="hero-slider-2 absolute inset-0 bg-cover bg-center flex items-center transition-opacity duration-1000 opacity-0 slide">
-                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+                <div class="absolute inset-0 bg-white bg-opacity-20"></div>
                 <div class="container mx-auto px-4 relative z-10 text-white">
                     <h1 class="text-4xl md:text-6xl font-bold mb-4 text-main">Entretenimiento de calidad</h1>
                     <p class="text-xl md:text-2xl mb-8 text-secondary">La mejor señal satelital para tu hogar.</p>
@@ -140,7 +140,7 @@
                         <a href="https://wa.me/1234567890" class="btn-primary px-6 py-3 rounded-lg font-semibold flex items-center">
                             <i class="fab fa-whatsapp mr-2"></i> Solicitar cotización
                         </a>
-                        <a href="#entretenimiento" class="bg-custom-dark hover:bg-gray-800 text-main px-6 py-3 rounded-lg font-semibold transition">
+                        <a href="#entretenimiento" class="bg-custom-dark hover:bg-gray-200 text-main px-6 py-3 rounded-lg font-semibold transition">
                             Ver productos y servicios
                         </a>
                     </div>
@@ -155,7 +155,7 @@
     </section>
 
     <!-- Promotions Section -->
-    <section class="py-16 bg-gradient-to-r from-blue-900 to-blue-800 text-main">
+    <section class="py-16 bg-gradient-to-r from-blue-100 to-blue-200 text-main">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Promociones Vigentes</h2>
             
@@ -169,9 +169,9 @@
                     <div class="p-6">
                         <p class="mb-4">4 cámaras HD + 1 sistema de alarma con monitoreo</p>
                         <div class="flex items-center mb-4">
-                            <span class="text-3xl font-bold text-main">$299</span>
-                            <span class="ml-2 text-secondary line-through">$399</span>
-                            <span class="ml-auto badge text-xs font-medium px-2.5 py-0.5 rounded">25% OFF</span>
+                            <span class="text-3xl font-bold text-main">Bs. 299</span>
+                            <span class="ml-2 text-secondary line-through">Bs. 399</span>
+                            <span class="ml-auto badge text-xs font-medium px-2.5 py-0.5 rounded">25% de descuento</span>
                         </div>
                         <a href="https://wa.me/1234567890" class="block w-full btn-primary text-center py-2 rounded-lg font-semibold">
                             Aprovechar oferta
@@ -188,9 +188,9 @@
                     <div class="p-6">
                         <p class="mb-4">Kit completo + 3 meses de programación premium gratis</p>
                         <div class="flex items-center mb-4">
-                            <span class="text-3xl font-bold text-main">$199</span>
-                            <span class="ml-2 text-secondary line-through">$249</span>
-                            <span class="ml-auto badge text-xs font-medium px-2.5 py-0.5 rounded">20% OFF</span>
+                            <span class="text-3xl font-bold text-main">Bs. 199</span>
+                            <span class="ml-2 text-secondary line-through">Bs. 249</span>
+                            <span class="ml-auto badge text-xs font-medium px-2.5 py-0.5 rounded">20% de descuento</span>
                         </div>
                         <a href="https://wa.me/1234567890" class="block w-full btn-primary text-center py-2 rounded-lg font-semibold">
                             Aprovechar oferta
@@ -200,7 +200,7 @@
             </div>
             
             <div class="text-center mt-8">
-                <a href="#" class="inline-block border-2 border-main text-main px-6 py-3 rounded-lg font-semibold transition hover:bg-main hover:text-custom-darker">
+                <a href="#" class="inline-block border-2 border-main text-main px-6 py-3 rounded-lg font-semibold transition hover:bg-main hover:text-custom-lighter">
                     <i class="fas fa-download mr-2"></i> Descargar catálogo completo (PDF)
                 </a>
             </div>
@@ -288,22 +288,22 @@
                 <h3 class="text-2xl font-bold mb-6 text-center text-main">Beneficios de nuestros sistemas</h3>
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="text-center">
-                        <div class="bg-blue-900 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                            <i class="fas fa-clock text-blue-300 text-2xl"></i>
+                        <div class="bg-blue-200 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-clock text-blue-800 text-2xl"></i>
                         </div>
                         <h4 class="font-bold mb-2 text-main">Monitoreo 24/7</h4>
                         <p class="text-secondary">Vigilancia constante de tu propiedad en todo momento.</p>
                     </div>
                     <div class="text-center">
-                        <div class="bg-blue-900 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                            <i class="fas fa-award text-blue-300 text-2xl"></i>
+                        <div class="bg-blue-200 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-award text-blue-800 text-2xl"></i>
                         </div>
                         <h4 class="font-bold mb-2 text-main">Equipos de calidad</h4>
                         <p class="text-secondary">Trabajamos con las mejores marcas del mercado.</p>
                     </div>
                     <div class="text-center">
-                        <div class="bg-blue-900 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
-                            <i class="fas fa-user-tie text-blue-300 text-2xl"></i>
+                        <div class="bg-blue-200 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-user-tie text-blue-800 text-2xl"></i>
                         </div>
                         <h4 class="font-bold mb-2 text-main">Instalación profesional</h4>
                         <p class="text-secondary">Técnicos certificados para una instalación impecable.</p>
@@ -398,21 +398,21 @@
                 <h3 class="text-2xl font-bold mb-6 text-center">Ventajas de nuestros servicios</h3>
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="text-center">
-                        <div class="bg-blue-900 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <div class="bg-blue-200 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-satellite-dish text-2xl"></i>
                         </div>
                         <h4 class="font-bold mb-2">Señal estable</h4>
                         <p class="text-secondary">La mejor tecnología para garantizar una señal sin interrupciones.</p>
                     </div>
                     <div class="text-center">
-                        <div class="bg-blue-900 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <div class="bg-blue-200 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-bolt text-2xl"></i>
                         </div>
                         <h4 class="font-bold mb-2">Instalación rápida</h4>
                         <p class="text-secondary">Nuestros técnicos realizan la instalación en menos de 2 horas.</p>
                     </div>
                     <div class="text-center">
-                        <div class="bg-blue-900 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <div class="bg-blue-200 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-globe text-2xl"></i>
                         </div>
                         <h4 class="font-bold mb-2">Contenido internacional</h4>
@@ -434,14 +434,14 @@
                 </div>
                 <div class="md:w-1/2">
                     <h3 class="text-2xl font-bold mb-4 text-main">Nuestra historia</h3>
-                    <p class="text-secondary mb-4">Desde 2010, nos hemos dedicado a brindar soluciones integrales de seguridad y entretenimiento para hogares y negocios en toda la región. Lo que comenzó como un pequeño taller de instalaciones, hoy es una empresa reconocida por su calidad y servicio.</p>
+                    <p class="text-secondary mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <p class="text-secondary mb-6">Nuestro compromiso es ofrecer productos de primera calidad respaldados por un servicio técnico profesional y atención personalizada a cada cliente.</p>
                     
                     <h3 class="text-2xl font-bold mb-4 text-main">¿Por qué confiar en nosotros?</h3>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <div class="bg-blue-900 p-2 rounded-full mr-4">
-                                <i class="fas fa-medal text-blue-300"></i>
+                            <div class="bg-blue-200 p-2 rounded-full mr-4">
+                                <i class="fas fa-medal text-blue-800"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-main">Más de 10 años de experiencia</h4>
@@ -449,8 +449,8 @@
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="bg-blue-900 p-2 rounded-full mr-4">
-                                <i class="fas fa-certificate text-blue-300"></i>
+                            <div class="bg-blue-200 p-2 rounded-full mr-4">
+                                <i class="fas fa-certificate text-blue-800"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-main">Certificaciones</h4>
@@ -458,8 +458,8 @@
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="bg-blue-900 p-2 rounded-full mr-4">
-                                <i class="fas fa-handshake text-blue-300"></i>
+                            <div class="bg-blue-200 p-2 rounded-full mr-4">
+                                <i class="fas fa-handshake text-blue-800"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-main">Marcas aliadas</h4>
@@ -494,7 +494,7 @@
                         </div>
                     </div>
                     <p class="text-secondary mb-4">"Instalaron cámaras en mi casa y el servicio fue impecable. Desde la asesoría inicial hasta la instalación, todo muy profesional. Ahora me siento mucho más segura."</p>
-                    <div class="text-sm text-gray-500">Hace 2 meses</div>
+                    <div class="text-sm text-gray-400">Hace 2 meses</div>
                 </div>
                 
                 <!-- Testimonial 2 -->
@@ -513,7 +513,7 @@
                         </div>
                     </div>
                     <p class="text-secondary mb-4">"El kit satelital que me instalaron funciona perfecto. La señal es excelente y el servicio postventa es muy bueno. Recomiendo 100% a esta empresa."</p>
-                    <div class="text-sm text-gray-500">Hace 3 semanas</div>
+                    <div class="text-sm text-gray-400">Hace 3 semanas</div>
                 </div>
             </div>
             
@@ -572,8 +572,8 @@
                                 <i class="fas fa-map-marker-alt mt-1 mr-4"></i>
                                 <div>
                                     <h4 class="font-bold">Dirección</h4>
-                                    <p class="text-secondary">Calle Principal #123, Ciudad</p>
-                                    <a href="https://goo.gl/maps/example" target="_blank" class="inline-block mt-2 btn-primary px-4 py-2 rounded-lg font-semibold">
+                                    <p class="text-secondary">Avenida 6 de Marzo, El Alto</p>
+                                    <a href="https://maps.app.goo.gl/Uzdp5L8PqPqAyvHg9" target="_blank" class="inline-block mt-2 btn-primary px-4 py-2 rounded-lg font-semibold">
                                         <i class="fas fa-map-marked-alt mr-2"></i> Ver en mapa
                                     </a>
                                 </div>
@@ -592,16 +592,16 @@
                     <div>
                         <h3 class="text-xl font-bold mb-4">Síguenos</h3>
                         <div class="flex space-x-4">
-                            <a href="#" class="bg-gray-700 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <a href="#" class="bg-gray-200 hover:bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center transition">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="bg-gray-700 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <a href="#" class="bg-gray-200 hover:bg-pink-500 w-10 h-10 rounded-full flex items-center justify-center transition">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="bg-gray-700 hover:bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <a href="#" class="bg-gray-200 hover:bg-blue-300 w-10 h-10 rounded-full flex items-center justify-center transition">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="bg-gray-700 hover:bg-red-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <a href="#" class="bg-gray-200 hover:bg-red-500 w-10 h-10 rounded-full flex items-center justify-center transition">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
@@ -653,7 +653,7 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <h3 class="text-xl font-bold mb-4">SeguridadPlus</h3>
+                    <h3 class="text-xl font-bold mb-4">BLUETEL</h3>
                     <p class="text-secondary">Soluciones integrales de seguridad y entretenimiento para tu hogar y negocio.</p>
                 </div>
                 <div>
@@ -678,7 +678,7 @@
                     <h3 class="text-lg font-bold mb-4">Newsletter</h3>
                     <p class="text-secondary">Suscríbete para recibir promociones y consejos.</p>
                     <form class="mt-4 flex">
-                        <input type="email" placeholder="Tu correo" class="px-4 py-2 rounded-l-lg text-gray-800 w-full focus:outline-none">
+                        <input type="email" placeholder="Tu correo" class="px-4 py-2 rounded-l-lg text-gray-200 w-full focus:outline-none">
                         <button type="submit" class="btn-primary px-4 py-2 rounded-r-lg">
                             <i class="fas fa-paper-plane"></i>
                         </button>
@@ -686,7 +686,7 @@
                 </div>
             </div>
             <div class="pt-6 border-t border-custom text-center text-secondary">
-                <p>&copy; 2023 SeguridadPlus. Todos los derechos reservados.</p>
+                <p>&copy; 2025 BLUETEL. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
