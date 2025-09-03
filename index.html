@@ -10,115 +10,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #0F172A;
-            color: #E2E8F0;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .hero-slider {
-            background-image: url('./img/sat.jpg');
-        }
-
-        .hero-slider-2 {
-            background-image: url('./img/fantastic.jpg  ');
-        }
-
-        .before-after {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .before-after img {
-            width: 100%;
-            display: block;
-        }
-
-        .before-after .after {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .slider-handle {
-            position: absolute;
-            width: 4px;
-            height: 100%;
-            background: #E2E8F0;
-            left: 50%;
-            top: 0;
-            cursor: ew-resize;
-        }
-
-        .slider-handle:after {
-            content: '';
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: #E2E8F0;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .bg-custom-dark {
-            background-color: #1E293B;
-        }
-
-        .bg-custom-darker {
-            background-color: #0F172A;
-        }
-
-        .text-main {
-            color: #E2E8F0;
-        }
-
-        .text-secondary {
-            color: #94A3B8;
-        }
-
-        .border-custom {
-            border-color: #334155;
-        }
-
-        .btn-primary {
-            background-color: #2563EB;
-            color: white;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: #3B82F6;
-        }
-
-        .badge {
-            color: #E2E8F0;
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid #334155;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="font-sans">
-    <!-- Barra promocional -->
     <div class="bg-black text-white py-2 px-4 text-sm font-semibold text-center tracking-wide">
         🎉 ¡Promoción especial! 🚀 25% de descuento en todos nuestros planes 🎉
     </div>
- <!-- Navigation -->
 <nav class="bg-custom-dark from-blue-900 via-blue-800 to-blue-900 shadow-xl sticky top-0 z-50">
   <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-    <!-- Logo principal -->
     <div class="flex items-center space-x-3">
       <img src="img/logo.png" alt="Logo Bluetel" class="h-12 w-12 rounded-full object-cover transition-transform duration-300 hover:scale-110">
       <span class="text-2xl font-bold text-white">BLUETEL</span>
     </div>
 
-    <!-- Links de navegación -->
     <div class="hidden md:flex space-x-8 items-center">
       <a href="#home" class="flex items-center text-gray-300 hover:text-white transition-colors duration-300">
         <i class="fas fa-home mr-1"></i> Inicio
@@ -140,7 +45,6 @@
       </a>
     </div>
 
-    <!-- Botón móvil -->
     <div class="md:hidden">
       <button id="menu-btn" class="text-white focus:outline-none">
         <i class="fas fa-bars text-3xl hover:scale-110 transition-transform duration-300"></i>
@@ -148,7 +52,6 @@
     </div>
   </div>
 
-  <!-- Mobile menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-blue-900 px-4 py-3 space-y-2">
     <a href="#home" class="flex items-center text-gray-200 hover:bg-blue-700 hover:text-white px-3 py-2 rounded transition-colors duration-300">
       <i class="fas fa-home mr-2"></i> Inicio
@@ -172,33 +75,26 @@
 </nav>
 
 
-    <!-- Hero Section / Home -->
     <section id="home" class="relative overflow-hidden flex items-center justify-center" style="height: 800px;">
-        <!-- Slider -->
         <div id="slider" class="absolute inset-0">
-            <!-- Slide 1 -->
             <div class="hero-slider absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100 slide">
                 <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
             </div>
 
-            <!-- Slide 2 -->
             <div class="hero-slider-2 absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0 slide">
                 <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"></div>
             </div>
         </div>
 
-        <!-- Slider controls -->
         <div class="absolute bottom-6 left-0 right-0 flex justify-center space-x-2 z-10">
             <button class="slider-dot w-3 h-3 rounded-full bg-white bg-opacity-50 focus:outline-none" data-slide="0"></button>
             <button class="slider-dot w-3 h-3 rounded-full bg-white bg-opacity-50 focus:outline-none" data-slide="1"></button>
         </div>
 
-        <!-- Promotions Section -->
         <div class="relative z-10 container mx-auto px-4 py-16 text-white">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Promociones Vigentes</h2>
 
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <!-- Promotion 1 -->
                 <div class="bg-blue-700/50 text-white rounded-lg overflow-hidden shadow-xl border border-blue-600/50 backdrop-blur-md">
                     <img src="img/kit8cams.png" alt="Paquete Seguridad Total" class="w-full aspect-square object-cover">
 
@@ -219,7 +115,6 @@
                     </div>
                 </div>
 
-                <!-- Promotion 2 -->
                 <div class="bg-blue-700/50 text-white rounded-lg overflow-hidden shadow-xl border border-blue-600/50 backdrop-blur-md">
                     <img src="/img/kitsatelital.png" alt="Kit Satelital Premium" class="w-full aspect-square object-cover">
 
@@ -251,13 +146,11 @@
 
 
 
-    <!-- Security Systems Section -->
     <section id="seguridad" class="py-16 bg-custom-darker">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-main">Sistemas de Seguridad</h2>
 
             <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <!-- Service 1 -->
                 <div class="bg-custom-dark p-6 rounded-lg shadow-md hover:shadow-lg transition border border-custom">
                     <div class="text-blue-400 mb-4">
                         <i class="fas fa-video text-4xl"></i>
@@ -281,7 +174,6 @@
                     </ul>
                 </div>
 
-                <!-- Service 2 -->
                 <div class="bg-custom-dark p-6 rounded-lg shadow-md hover:shadow-lg transition border border-custom">
                     <div class="text-blue-400 mb-4">
                         <i class="fas fa-bell text-4xl"></i>
@@ -305,7 +197,6 @@
                     </ul>
                 </div>
 
-                <!-- Service 3 -->
                 <div class="bg-custom-dark p-6 rounded-lg shadow-md hover:shadow-lg transition border border-custom">
                     <div class="text-blue-400 mb-4">
                         <i class="fas fa-tools text-4xl"></i>
@@ -330,12 +221,10 @@
                 </div>
             </div>
 
-            <!-- Benefits -->
             <div class="bg-custom-dark p-8 rounded-lg mb-12 border border-custom">
                 <h3 class="text-2xl font-bold mb-6 text-center text-main">Beneficios de nuestros sistemas</h3>
                 <div class="grid md:grid-cols-3 gap-6">
 
-                    <!-- Monitoreo 24/7 -->
                     <div class="text-center">
                         <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-clock text-blue-600 text-2xl"></i>
@@ -344,7 +233,6 @@
                         <p class="text-secondary">Vigilancia constante de tu propiedad en todo momento.</p>
                     </div>
 
-                    <!-- Equipos de calidad -->
                     <div class="text-center">
                         <div class="bg-yellow-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-award text-yellow-600 text-2xl"></i>
@@ -353,7 +241,6 @@
                         <p class="text-secondary">Trabajamos con las mejores marcas del mercado.</p>
                     </div>
 
-                    <!-- Instalación profesional -->
                     <div class="text-center">
                         <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-user-tie text-green-600 text-2xl"></i>
@@ -365,7 +252,6 @@
                 </div>
             </div>
 
-            <!-- Gallery -->
             <h3 class="text-2xl font-bold mb-6 text-center text-main">Galería de instalaciones</h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="overflow-hidden rounded-lg shadow-md border border-custom">
@@ -388,13 +274,11 @@
         </div>
     </section>
 
-    <!-- Entertainment Section -->
     <section id="entretenimiento" class="py-16 bg-custom-dark">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-main">Entretenimiento para tu Hogar</h2>
 
             <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <!-- Product 1 -->
                 <div
                     class="bg-custom-darker p-6 rounded-lg shadow-md hover:shadow-lg transition flex flex-col md:flex-row items-center border border-custom">
                     <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6">
@@ -425,7 +309,6 @@
                     </div>
                 </div>
 
-                <!-- Product 2 -->
                 <div
                     class="bg-custom-darker p-6 rounded-lg shadow-md hover:shadow-lg transition flex flex-col md:flex-row items-center border border-custom">
                     <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6">
@@ -457,12 +340,10 @@
                 </div>
             </div>
 
-            <!-- Advantages -->
             <div class="bg-custom-darker text-main p-8 rounded-lg border border-custom">
                 <h3 class="text-2xl font-bold mb-6 text-center">Ventajas de nuestros servicios</h3>
                 <div class="grid md:grid-cols-3 gap-6">
 
-                    <!-- Señal estable -->
                     <div class="text-center">
                         <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-satellite-dish text-blue-600 text-2xl"></i>
@@ -471,7 +352,6 @@
                         <p class="text-secondary">La mejor tecnología para garantizar una señal sin interrupciones.</p>
                     </div>
 
-                    <!-- Instalación rápida -->
                     <div class="text-center">
                         <div class="bg-yellow-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-bolt text-yellow-600 text-2xl"></i>
@@ -480,7 +360,6 @@
                         <p class="text-secondary">Nuestros técnicos realizan la instalación en menos de 2 horas.</p>
                     </div>
 
-                    <!-- Contenido internacional -->
                     <div class="text-center">
                         <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
                             <i class="fas fa-globe text-green-600 text-2xl"></i>
@@ -495,7 +374,6 @@
         </div>
     </section>
 
-    <!-- About Us Section -->
     <section id="nosotros" class="py-16 bg-custom-darker">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-main">Sobre Nosotros</h2>
@@ -506,7 +384,6 @@
                 </div>
                 <div class="md:w-1/2">
                     <h3 class="text-2xl font-bold mb-4 text-main">Nuestro desarrollo</h3>
-                    <!-- agregar el desarrolo -->
                     <p class="text-secondary mb-4">
                         En Bluetel, somos una empresa dedicada a brindar soluciones integrales en sistemas de seguridad y
                         entretenimiento para hogares y negocios. Con más de una década de experiencia en el sector, nos
@@ -554,13 +431,11 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section id="testimonios" class="py-16 bg-custom-dark">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-main">Testimonios de Clientes</h2>
 
             <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <!-- Testimonial 1 -->
                 <div class="bg-custom-darker p-6 rounded-lg shadow-md border border-custom">
                     <div class="flex items-center mb-4">
                         <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Cliente"
@@ -582,7 +457,6 @@
                     <div class="text-sm text-gray-400">Hace 2 meses</div>
                 </div>
 
-                <!-- Testimonial 2 -->
                 <div class="bg-custom-darker p-6 rounded-lg shadow-md border border-custom">
                     <div class="flex items-center mb-4">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente"
@@ -606,13 +480,11 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contacto" class="py-16 bg-custom-darker text-main">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contáctanos</h2>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Contact Info -->
                 <div>
                     <div class="mb-8">
                         <h3 class="text-xl font-bold mb-4">Información de contacto</h3>
@@ -653,25 +525,21 @@
                     <div>
                         <h3 class="text-xl font-bold mb-4">Síguenos</h3>
                         <div class="flex space-x-4">
-                            <!-- Facebook -->
                             <a href="#"
                                 class="bg-blue-600 text-white hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
 
-                            <!-- Instagram -->
                             <a href="#"
                                 class="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white hover:opacity-80 w-10 h-10 rounded-full flex items-center justify-center transition">
                                 <i class="fab fa-instagram"></i>
                             </a>
 
-                            <!-- Twitter -->
                             <a href="#"
                                 class="bg-blue-400 text-white hover:bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center transition">
                                 <i class="fab fa-twitter"></i>
                             </a>
 
-                            <!-- YouTube -->
                             <a href="#"
                                 class="bg-red-600 text-white hover:bg-red-700 w-10 h-10 rounded-full flex items-center justify-center transition">
                                 <i class="fab fa-youtube"></i>
@@ -681,49 +549,7 @@
 
                 </div>
 
-                <!-- Contact Form -->
-                <!-- <div>
-                    <h3 class="text-xl font-bold mb-4">Envíanos un mensaje</h3>
-                    <form action="https://formspree.io/f/xrbljgjy" method="POST" class="space-y-4">
-                        <div>
-                            <label for="name" class="block mb-1">Nombre completo</label>
-                            <input type="text" id="name" name="name" required
-                                class="w-full px-4 py-2 rounded-lg bg-custom-dark border border-custom focus:outline-none focus:ring-2 focus:ring-blue-500 text-main placeholder-secondary">
-                        </div>
-                        <div>
-                            <label for="email" class="block mb-1">Correo electrónico</label>
-                            <input type="email" id="email" name="email" required
-                                class="w-full px-4 py-2 rounded-lg bg-custom-dark border border-custom focus:outline-none focus:ring-2 focus:ring-blue-500 text-main placeholder-secondary">
-                        </div>
-                        <div>
-                            <label for="phone" class="block mb-1">Teléfono</label>
-                            <input type="tel" id="phone" name="phone"
-                                class="w-full px-4 py-2 rounded-lg bg-custom-dark border border-custom focus:outline-none focus:ring-2 focus:ring-blue-500 text-main placeholder-secondary">
-                        </div>
-                        <div>
-                            <label for="service" class="block mb-1">Servicio de interés</label>
-                            <select id="service" name="service"
-                                class="w-full px-4 py-2 rounded-lg bg-custom-dark border border-custom focus:outline-none focus:ring-2 focus:ring-blue-500 text-main">
-                                <option value="">Seleccione una opción</option>
-                                <option value="videovigilancia">Videovigilancia</option>
-                                <option value="alarmas">Alarmas</option>
-                                <option value="satelital">TV Satelital</option>
-                                <option value="tuP4K">Dispositivo TuP4K</option>
-                                <option value="mantenimiento">Mantenimiento</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message" class="block mb-1">Mensaje</label>
-                            <textarea id="message" name="message" rows="4"
-                                class="w-full px-4 py-2 rounded-lg bg-custom-dark border border-custom focus:outline-none focus:ring-2 focus:ring-blue-500 text-main placeholder-secondary"></textarea>
-                        </div>
-                        <button type="submit" class="w-full btn-primary px-6 py-3 rounded-lg font-semibold">
-                            Enviar mensaje
-                        </button>
-                    </form>
-                </div> -->
                 <div>
-                    <!-- Mostrar el mapa de la ubicación exacta -->
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d762.146!2d-68.16619393502015!3d-16.508831772107918!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf940828c67d%3A0x804dafa8240a849!2sBlueTel%20TV!5e0!3m2!1ses-419!2sbo!4v1700806488786!5m2!1ses-419!2sbo"
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -736,7 +562,6 @@
         </div>
     </section>
 
-    <!-- Marcas con las que trabajamos -->
     <section id="marcas" class="py-16 bg-custom-dark">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-main">Marcas con las que trabajamos</h2>
@@ -748,7 +573,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-custom-darker text-main py-8 border-t border-custom">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
@@ -775,17 +599,6 @@
                         <li><a href="#" class="hover:text-main transition">Política de privacidad</a></li>
                     </ul>
                 </div>
-                <!-- <div>
-                    <h3 class="text-lg font-bold mb-4">Suscríbete</h3>
-                    <p class="text-secondary">Suscríbete para recibir promociones y consejos.</p>
-                    <form class="mt-4 flex">
-                        <input type="email" placeholder="Tu correo"
-                            class="px-4 py-2 rounded-l-lg text-gray-200 w-full focus:outline-none">
-                        <button type="submit" class="btn-primary px-4 py-2 rounded-r-lg">
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div> -->
             </div>
             <div class="pt-6 border-t border-custom text-center text-secondary">
                 <p>&copy; 2025 BLUETEL. Todos los derechos reservados.</p>
@@ -793,114 +606,12 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
     <a href="httpswa.me/59163760097"
         class="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl z-50 transition-transform hover:scale-110">
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
 
-    <script>
-        // Mobile menu toggle
-        document.getElementById('menu-btn').addEventListener('click', function () {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-
-        // Hero slider
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.slider-dot');
-
-        function showSlide(n) {
-            slides.forEach((slide, index) => {
-                slide.classList.toggle('opacity-0', index !== n);
-                slide.classList.toggle('opacity-100', index === n);
-            });
-
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('bg-white', index === n);
-                dot.classList.toggle('bg-opacity-50', index !== n);
-            });
-
-            currentSlide = n;
-        }
-
-        dots.forEach(dot => {
-            dot.addEventListener('click', function () {
-                showSlide(parseInt(this.dataset.slide));
-            });
-        });
-
-        // Auto slide change
-        setInterval(() => {
-            showSlide((currentSlide + 1) % slides.length);
-        }, 5000);
-
-        // Before & After slider
-        document.querySelectorAll('.before-after').forEach(container => {
-            const after = container.querySelector('.after');
-            const handle = container.querySelector('.slider-handle');
-            let isDragging = false;
-
-            function moveSlider(e) {
-                if (!isDragging) return;
-
-                const containerRect = container.getBoundingClientRect();
-                let x = e.clientX - containerRect.left;
-
-                // Limit x to container bounds
-                x = Math.max(0, Math.min(x, containerRect.width));
-
-                const percent = (x / containerRect.width) * 100;
-                after.style.width = `${100 - percent}%`;
-                handle.style.left = `${percent}%`;
-            }
-
-            handle.addEventListener('mousedown', () => {
-                isDragging = true;
-            });
-
-            window.addEventListener('mousemove', moveSlider);
-            window.addEventListener('mouseup', () => {
-                isDragging = false;
-            });
-
-            // Touch support
-            handle.addEventListener('touchstart', () => {
-                isDragging = true;
-            });
-
-            window.addEventListener('touchmove', (e) => {
-                moveSlider(e.touches[0]);
-            });
-
-            window.addEventListener('touchend', () => {
-                isDragging = false;
-            });
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-
-                    // Close mobile menu if open
-                    if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
-                        document.getElementById('mobile-menu').classList.add('hidden');
-                    }
-                }
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

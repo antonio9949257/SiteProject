@@ -1,0 +1,90 @@
+body {
+            background-color: #0F172A;
+            color: #E2E8F0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-slider {
+            background-image: url('../img/sat.jpg');
+        }
+
+        .hero-slider-2 {
+            background-image: url('../img/fantastic.jpg');
+        }
+
+        .before-after {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .before-after img {
+            width: 100%;
+            display: block;
+        }
+
+        .before-after .after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .slider-handle {
+            position: absolute;
+            width: 4px;
+            height: 100%;
+            background: #E2E8F0;
+            left: 50%;
+            top: 0;
+            cursor: ew-resize;
+        }
+
+        .slider-handle:after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #E2E8F0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bg-custom-dark {
+            background-color: #1E293B;
+        }
+
+        .bg-custom-darker {
+            background-color: #0F172A;
+        }
+
+        .text-main {
+            color: #E2E8F0;
+        }
+
+        .text-secondary {
+            color: #94A3B8;
+        }
+
+        .border-custom {
+            border-color: #334155;
+        }
+
+        .btn-primary {
+            background-color: #2563EB;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #3B82F6;
+        }
+
+        .badge {
+            color: #E2E8F0;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #334155;
+        }
