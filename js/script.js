@@ -97,3 +97,41 @@ document.getElementById('menu-btn').addEventListener('click', function () {
                 }
             });
         });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const promoContainer = document.getElementById('promo-container');
+    const promoSlides = document.querySelectorAll('.promo-slide');
+    const prevButton = document.getElementById('prev-promo');
+    const nextButton = document.getElementById('next-promo');
+    let currentPromoSlide = 0;
+
+    function showPromoSlide(n) {
+        if (window.innerWidth < 768) {
+            promoSlides.forEach((slide, index) => {
+                slide.style.display = (index === n) ? 'block' : 'none';
+            });
+        } else {
+            promoSlides.forEach(slide => {
+                slide.style.display = 'block';
+            });
+        }
+    }
+
+    function nextPromo() {
+        currentPromoSlide = (currentPromoSlide + 1) % promoSlides.length;
+        showPromoSlide(currentPromoSlide);
+    }
+
+    function prevPromo() {
+        currentPromoSlide = (currentPromoSlide - 1 + promoSlides.length) % promoSlides.length;
+        showPromoSlide(currentPromoSlide);
+    }
+
+    if (prevButton && nextButton) {
+        prevButton.addEventListener('click', prevPromo);
+        nextButton.addEventListener('click', nextPromo);
+    }
+
+    window.addEventListener('resize', () => showPromoSlide(currentPromoSlide));
+    showPromoSlide(currentPromoSlide);
+});
